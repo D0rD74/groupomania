@@ -1,0 +1,68 @@
+input[type="submit"],
+select,
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea {
+  min-width: 330px;
+  padding: 0.5em;
+  border-color: $tertiary;
+  margin-bottom: 0.5em;
+  border-radius: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+textarea {
+  min-height: 200px;
+  border-width: 2px;
+}
+
+input[type="submit"] {
+  border-color: $tertiary;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(
+    180deg,
+    rgba(78, 81, 102, 1) 0%,
+    rgba(112, 114, 122, 1) 100%
+  );
+  transition: all 2s ease;
+  border-radius: 7px;
+
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(78, 81, 102, 1) 0%,
+    rgba(96, 99, 121, 1) 100%
+  );
+}
+
+button {
+  transition: all 0.3s;
+  &.link {
+    border: none;
+    background: none;
+    padding: 0;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &.delete {
+    }
+  }
+}
+
+a.edit {
+  padding: 0 0.2em 0 0.4em;
+  font-weight: normal;
+}

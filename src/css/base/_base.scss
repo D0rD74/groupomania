@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  body {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+}
+
+p {
+  margin: 0.5em 0px;
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.primary {
+  color: $primary;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+a:not(header a) {
+  font-weight: bold;
+}
+
+a:hover {
+  color: $primary;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: italic;
+}
+
+main {
+  @include mobile-only {
+    flex-direction: column;
+  }
+
+  .middle {
+    flex: 1 1 80%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+
+    & > div {
+      width: 50%;
+      @include mobile-only {
+        width: 100%;
+      }
+    }
+  }
+}
+
+img {
+  width: 100%;
+}

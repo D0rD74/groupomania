@@ -1,0 +1,28 @@
+header {
+  margin-bottom: 0.5em;
+  .navbar {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 215, 215, 0.4) 0%,
+      rgba(249, 249, 249, 1) 100%
+    );
+    --bs-navbar-padding-x: 0.5rem;
+    border-bottom: 1px solid $secondary;
+
+    .nav-item {
+      &.home {
+        margin-right: auto;
+        width: 200px;
+      }
+
+      &:not(:first-child) {
+        margin: 0px 10px;
+        line-height: 39px;
+      }
+      .current {
+        font-weight: bold;
+        color: $primary;
+      }
+    }
+  }
+}

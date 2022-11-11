@@ -1,0 +1,21 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1.5em;
+  @include box-shadow;
+  img {
+  }
+  p {
+    margin: 0;
+    padding: 1em;
+    border-radius: 0.2em;
+  }
+
+  .likeBox {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,17 @@
+#LeftBar {
+  flex: 1 1 calc(20%);
+  padding: 1em;
+
+  a {
+    padding-left: 0.5em;
+
+    &.current {
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+
+  #admin {
+    margin-top: 0.5em;
+  }
+}
